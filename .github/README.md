@@ -11,7 +11,19 @@
     * [Installation](#installation)
     * [Quick usage instruction](#quick-usage-instruction)
 * [Features](#features)
+    * [Key bindings](#key-bindings)
+    * [zsh](#zsh)
+    * [st](#st)
+    * [dmenu](#dmenu)
+    * [slock](#slock)
+    * [polybar](#polybar)
+    * [compton](#compton)
+    * [Neovim](#neovim)
+    * [tmux](#tmux)
+    * [Multi monitor support](#multi-monitor-support)
+    * [GTK theme](#gtk-theme)
     * [Version control](#version-control)
+    * [mpv](#mpv)
     * [Wallpapers](#wallpapers)
 * [Acknowledgements](#acknowledgements)
 
@@ -73,7 +85,45 @@ Some basic key bindings:
 
 ## Features
 
+### Key bindings
+
+I use `sxhkd` for key bindings. You can check out the dynamically generated list of available key bindings via `super + /` (I choose this because of the `?` symbol)
+
+The general "grammar" of my key bindings are:
+
+- `super + ...`: regularly used or non-destructive actions, launch apps.
+- `super + shift + ...`: moving windows, destructive actions, launch apps.
+- `super + control + ...`: moving floating windows
+
+### zsh
+
+| Plugin | Details | Screenshot |
+| :-- | :-- | :-- |
+| powerlevel10k | Using powerlevel10k we have a future rich but still insanely fast prompt, no compromise | |
+| zsh-autosuggestion| If we used a command before, it will suggest it the next time you type | |
+| zsh-syntax-highlighting | Highlight shell command, no more plain white commands | |
+
+### st
+
+### dmenu
+
+### slock
+
+### polybar
+
+### compton
+
+### Neovim
+
+### tmux
+
+### Multi monitor support
+
+### GTK theme
+
 ### Version control
+
+### mpv
 
 The following `dotfiles` command is an alias to [manage dotfiles using git bare](https://news.ycombinator.com/item?id=11070797).
 
