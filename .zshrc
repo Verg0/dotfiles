@@ -49,7 +49,7 @@ setopt no_auto_remove_slash
 source $HOME/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/fzf/key-bindings.zsh
+source /usr/local/opt/fzf/shell/key-bindings.zsh
 
 # Powerlevel10k settings
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
