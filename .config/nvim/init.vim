@@ -62,7 +62,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'farmergreg/vim-lastplace'
 Plug 'ferrine/md-img-paste.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
@@ -81,6 +81,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
+Plug 'unblevable/quick-scope'
 Plug 'voldikss/vim-floaterm'
 call plug#end()
 
@@ -164,6 +165,10 @@ autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Barbaric
 let g:barbaric_default = 'xkb:us::eng'
+
+" Quick scope
+highlight QuickScopePrimary gui=bold,underline cterm=underline
+highlight QuickScopeSecondary gui=underline cterm=underline
 
 " Floating terminal
 let g:floaterm_keymap_toggle = '<M-t>'
