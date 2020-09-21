@@ -35,8 +35,9 @@ nnoremap <C-q> :q<CR>
 " Buffer
 nnoremap <LEADER>d :bp<CR>:bd #<CR>
 
-" Copy with system clipboard
-vmap <C-c> "+y
+" Copy and paste with system clipboard
+vnoremap <C-c> "+y
+inoremap <C-v> <C-r>+
 
 " Replace last search
 nnoremap <LEADER>r :%s///g<LEFT><LEFT>
@@ -126,7 +127,7 @@ let g:lightline#bufferline#clickable = 1
 
 " fzf
 let g:fzf_buffers_jump = 1
-nnoremap <C-t> :Files<CR>
+nnoremap <C-p> :Files<CR>
 nnoremap <TAB> :Buffers<CR>
 
 " Sneak
@@ -147,6 +148,7 @@ endfunction
 let g:coc_global_extensions = [
     \ 'coc-css',
     \ 'coc-docker',
+    \ 'coc-emmet',
     \ 'coc-go',
     \ 'coc-html',
     \ 'coc-json',
